@@ -1,0 +1,26 @@
+
+pipeline {
+    agent any
+    stages {
+
+        stage('gitcheckout') {
+            steps {
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Ksbooth01/content-terraform-docker']]])           }
+        }
+        stage('init') {
+            steps{
+                sh label: '', script: 'terraform init'    
+            }   
+        }
+        stage('plan') {
+            steps{
+                sh label: 'terraform plan', script: "terraform plan -out=tfplan -input=false"
+            }
+        }
+        stage('apply') {
+            steps {
+                sh label: 'terraform apply', script: "terraform apply -lock=false -input=false tfplan"
+            }
+        }
+    }
+}
