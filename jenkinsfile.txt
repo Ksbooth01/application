@@ -4,7 +4,7 @@ pipeline {
 
         stage('gitcheckout') {
             steps {
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Ksbooth01/content-terraform-docker']]])           }
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Ksbooth01/application']]])           }
         }
         stage('init') {
             steps{
