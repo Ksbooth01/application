@@ -18,7 +18,7 @@ Jenkins Setup
 	C. Setup Jenkins Pipeline
 	
 # GitHub Setup 
-	# A. Add a webhook
+	A. Add a webhook
 		What you’ll do here is install the Jenkins plugin on your GitHub repository in order to trigger a build in Jenkins when you commit a change in GitHub. 
 		This way, Jenkins can run tests to make sure your code is working as expected.
 		1.	In your browser, go to your GitHub account. The URL should be something like www.github.com/your_username
@@ -26,11 +26,11 @@ Jenkins Setup
 		3.	Click on Settings, on the upper right part of the page
 		4.	Click on Webhooks
 		5.	Click on Add Webhook
-		6.	Set the payload url to http://<YOUR_JENKINS_URL>/github-webhook/
+		6.	Set the payload url to http://'<YOUR_JENKINS_URL>'/github-webhook/
 		7.	Set Content type to application/json
 		8.	Select the webhook to be triggered by “Just the push event”.
 		9.	Click on Add webhook
- 	# B. Generate a GitHub access token
+ 	B. Generate a GitHub access token
 		This token can be used by an application to use an API, here the application is Jenkins and the API is the GitHub API to update the Jenkins build status in the pull request.
 		Ok, now you’re on to some non-obvious items.
 		1. Go to your GitHub account.
@@ -48,13 +48,13 @@ Jenkins Setup
 		9. Make sure to save your token somewhere so you can use it later. this is <YOUR_GITHUB_TOKEN>
 
 # Jenkins Setup  
-	# A. Install GitHub plugin:
+	A. Install GitHub plugin:
 		1.	In your browser, go to your Jenkins URL <YOUR_JENKINS_URL>
 		2.	Click on Manage Jenkins
 		3.	Click on Manage Plugins
 		4.	Go to Available tab and search for GitHub integration plugin
 		5.	Check the checkbox on the left and click on download and install after restart
-	# B. Configure Jenkins for GitHub Credentials: 
+	B. Configure Jenkins for GitHub Credentials: 
 		1.	In your browser, go to your Jenkins URL
 		2.	Click on Manage Jenkins
 		3.	Click on Configure System
