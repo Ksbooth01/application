@@ -9,10 +9,10 @@
 	•	<JenkinsProjectName> – your Jenkins project name
 		
 # What you will do in this setup:
-# GitHub Setup
+GitHub Setup
 	A. Add a Webhook for Jenkins
 	B. Generate a GitHub access token
-# Jenkins Setup
+Jenkins Setup
 	A.	Install GitHub plugin
 	B.	Configure Jenkins for GitHub Credentials:
 	C. Setup Jenkins Pipeline
