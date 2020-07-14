@@ -1,6 +1,6 @@
 # GitHub/Jenkins setup insructions 
 
-# Pre-requisites
+Pre-requisites
 	You will need to know and replace the following with your relevant info:
 	•	<Github_Account>
 	•	<Github_Project>
@@ -8,7 +8,7 @@
 	•	<YOUR_JENKINS_URL>
 	•	<JenkinsProjectName> – your Jenkins project name
 		
-# What you will do in this setup:
+What you will do in this setup:
 GitHub Setup
 	A. Add a Webhook for Jenkins
 	B. Generate a GitHub access token
